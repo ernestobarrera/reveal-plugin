@@ -1,11 +1,12 @@
 :root {
   --r-background-color: #CDDDDD;
   --r-heading-color: #db7b2c;
-  --r-main-color: #000000;
+  --r-main-color: #000000;  
   --r-link-color: #db7b2c;
   --r-link-color-hover: #454051;
   --r-main-font-size: 36px;
 }
+
 
 a.github-corner {
   color: var(--r-main-color);
@@ -18,7 +19,12 @@ a.github-corner:hover {
   color: var(--r-main-color);
   opacity: 0.75;
 }
-
+.custom-logo {
+  position: absolute;
+  top: 0; /* Ajusta esto según sea necesario */
+  left: 0; /* Ajusta esto para alinear tu logotipo a la derecha */
+  z-index: 1000; /* Asegura que el logotipo esté sobre otros elementos */
+}
 p code {
   background: rgba(0, 68, 68, 0.2);
 }
@@ -247,6 +253,7 @@ body.hide-menubar .reveal.ready .menubar a {
     overflow-y: auto; /* Permite desplazamiento vertical si es necesario */
     max-height: 70vh; /* Ajusta esto según tus necesidades */
   }
+ 
 
   .menu-button {
     display: flex; /* Muestra el botón del menú en pantallas pequeñas */
@@ -256,7 +263,10 @@ body.hide-menubar .reveal.ready .menubar a {
     cursor: pointer;
     font-size: 24px;
   }
-
+  .custom-logo {
+    top: 0px; /* Ajusta la posición vertical para evitar la superposición */
+    left: 40px; /* Ajusta la posición horizontal según sea necesario */
+  }
 
 
   .menu-open .menubar > ul {
@@ -270,5 +280,6 @@ body.hide-menubar .reveal.ready .menubar a {
   .menu-button {
     display: none; /* Oculta el botón del menú en pantallas grandes */
   }
+  
 }
 
